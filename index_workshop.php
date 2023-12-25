@@ -19,12 +19,15 @@
             </tr>
         </tbody>
     </table>
-    <style>
+    <div>
+        <style>
         table {
             width: 150px;
             height: 265px;
         }
-    </style>
+        </style>
+    </div>
+    
 </body>
 
 </html>
