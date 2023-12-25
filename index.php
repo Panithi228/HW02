@@ -14,7 +14,8 @@
         <?php } ?>       
     </div>
     
-    <style>
+    <center>
+        <style>
         div{
             width: 200;
             height: 350;
@@ -22,6 +23,8 @@
             overflow: scroll;
         }
     </style>
+    </center>
+    
 </body>
 
 </html>
