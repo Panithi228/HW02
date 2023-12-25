@@ -7,7 +7,7 @@
 <body>
     <center>
         <?php $multi_x = 2; ?>
-    <h1 style="color:blue">ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
+    <h1>ตารางสูตรคูณแม่ <?php echo $multi_x ?></h1>
     <div>
         <?php for($i = 1; $i <= 24; $i++) { ?>
             <?php echo $multi_x ?> x <?php echo $i ?> = <?php echo $multi_x*$i ?>
