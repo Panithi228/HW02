@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/my-route', function() {
+    echo "<h1>My Route Page</h1>";
+});
