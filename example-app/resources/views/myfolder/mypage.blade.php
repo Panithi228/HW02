@@ -6,7 +6,7 @@
         </h1> -->
         <!-- <h1>{{$val_a}} {{$val_b}}</h1> -->
         <!-- <h1>{{$val_a . ' ' . $val_b}}</h1> -->
-        <form method="post" action="/my-route">
+        <form method="post" action="/my-controller4">
             <p style="color: white">input number</p>
             @csrf
             <input type="text" name="myinput">
