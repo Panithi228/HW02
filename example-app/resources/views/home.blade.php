@@ -49,6 +49,14 @@
                     <label for="radio_c"><b class="CO">Others</b></label>
                 </div>
             </div>
+            <!-- Pic -->
+            <div class="form-group">
+                <label for="exampleInputFile">Picture</label>
+                <div class="input-group">
+                        <input type="file" class="custom-file-input" id="InputFile">
+                        <label class="custom-file-label">Choose file</label>
+                </div>
+            </div>
             <!-- Address -->
             <div class="form-group">
                 <label>Address :</label>
