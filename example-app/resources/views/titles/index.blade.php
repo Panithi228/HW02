@@ -32,7 +32,12 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="/titles" method="post">
+                        <form action="/titles<?php if (isset($title_id)) {
+                            echo '/' . $title_id->tit_id;
+                        } ?>" method="post">
+                            <?php if (isset($title_id)) { ?>
+                            @method('PUT')
+                            <?php } ?>
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
@@ -88,6 +93,11 @@
                                         <td>
                                             <a href="{{ url('/titles/' . $title->tit_id) }}"
                                                 class="btn btn-warning">แก้ไข</a>
+                                            <form method="post" action="/titles/{{ $title->tit_id }}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">ลบ</button>
+                                            </form>
                                         </td>
                                     </tr>
                                     <?php } ?>

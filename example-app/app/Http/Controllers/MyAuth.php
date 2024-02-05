@@ -45,7 +45,6 @@ class MyAuth extends Controller
         ]);
 
         $data = $req->all();
-
         User::create($data);
 
         return Redirect::to('login');

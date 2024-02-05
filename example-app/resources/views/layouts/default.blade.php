@@ -223,6 +223,16 @@
               </p>
             </a>
           </li>
+          <td>
+            <center>
+                <br>
+                <form method="post" action="logout">
+                    @csrf
+                    @method('logout')
+                    <button type="submit" class="btn btn-danger">Logout</button>
+                </form>
+            </center>
+        </td>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
