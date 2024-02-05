@@ -24,7 +24,7 @@ class MyAuth extends Controller
         if(Auth::attempt(['email' => $data['email'], 'password' => $data['password']])){
             return Redirect::to('titles');
         }else{
-            return Redirect::to('my-controller4');
+            return Redirect::to('login');
         }
     }
 
