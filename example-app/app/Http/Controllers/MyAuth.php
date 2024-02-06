@@ -6,6 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class MyAuth extends Controller
 {
@@ -45,6 +46,9 @@ class MyAuth extends Controller
         ]);
 
         $data = $req->all();
+
+        // Hash the password before storing it
+        $data['password'] = Hash::make($req->password);
         User::create($data);
 
         return Redirect::to('login');

@@ -226,9 +226,7 @@
           <td>
             <center>
                 <br>
-                <form method="post" action="logout">
-                    @csrf
-                    @method('logout')
+                <form action="{{ url('logout') }}" method="get">
                     <button type="submit" class="btn btn-danger">Logout</button>
                 </form>
             </center>
