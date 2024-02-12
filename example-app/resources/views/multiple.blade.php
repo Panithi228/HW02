@@ -18,9 +18,9 @@
                             // console.log(multiple_num * i);
                             $('#myh1').before(`<center><h1 class="gen_number">${multiple_num} x ${i} = ${multiple_num * i}</h1></center>`)
                         }
-                        setTimeout(function(){
-                        $(document).getElementById("myh1").remove();
-                        }, 100);
+                        // setTimeout(function(){
+                        // $(document).getElementById("myh1").remove();
+                        // }, 100);
                     }
 
                 </script>
