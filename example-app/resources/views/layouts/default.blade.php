@@ -226,7 +226,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="{{ url('my-controller') }}" class="nav-link">
+            <a href="/multiplication" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p> Multiple table </p>
             </a>

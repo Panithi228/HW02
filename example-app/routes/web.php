@@ -28,6 +28,10 @@ Route::middleware('auth')->group(function(){
     // auth first
 });
 
+Route::get("/titles", function(){
+    return view('titles.multiple');
+});
+
 Route::get("/my-controller", [MyController::class, "index"]);
 Route::get("/my-controller2", 'App\Http\Controllers\MyController@index');
 

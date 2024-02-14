@@ -14,7 +14,7 @@ class MyController extends Controller
     }
 
     public function index(){
-        return view('multiple');
+        return view('home');
     }
 
     public function store(Request $req){

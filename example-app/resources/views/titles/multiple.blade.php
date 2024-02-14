@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Homepage')
+@section('title', 'Multiple')
 
 @section('content')
     <!DOCTYPE html>
