@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function(){
     // auth first
 });
 
-Route::get("/titles", function(){
+Route::get("/multiplication", function(){
     return view('titles.multiple');
 });
 

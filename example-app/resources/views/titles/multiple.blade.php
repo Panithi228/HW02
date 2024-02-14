@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Multiple')
+@section('title', 'Multiplication')
 
 @section('content')
     <!DOCTYPE html>
